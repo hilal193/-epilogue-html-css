@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(235, 228, 228)
+}
+/* header */
 .banner{
     background-image: url(../../public/images/banner.jpg);
     display: flex;
@@ -10,13 +14,59 @@
 .banner>h1{
     padding-top: 15%;
     opacity: 1;
-    padding-bottom: 2%;
-    border-bottom: 1px solid white;
-
+    /* padding-bottom: 2%;
+    border-bottom: 1px solid white; */
 }
 
+.banner hr{
+    width: 30%;
+}
 .banner>p{
     text-transform: uppercase;
     opacity: 0.8;
     padding-bottom: 10%;
 }
+
+
+section{
+    margin:0 20%
+}
+
+/* about */
+.about{
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about span{
+    margin-top: 10%;
+    border: 1px black solid;
+    border-radius: 50%;
+    height: 25px ; width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about>p{
+    text-align: center;
+    padding: 0 10%;
+}
+.boutton{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    list-style-type: none;
+
+}
+.boutton_principal{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+}
+
