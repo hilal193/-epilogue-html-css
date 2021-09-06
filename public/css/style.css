@@ -5,6 +5,9 @@ body{
 /* header */
 .banner{
     background-image: url(../../public/images/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,6 +73,7 @@ section{
     margin-top: 5%;
     margin-bottom: 10%;
     list-style-type: none;
+    padding-left: 0;
 
 }
 .boutton_principal{
@@ -86,6 +90,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     color: gray;
+    justify-content: space-between;
 }
 .bloc{
     display: flex;
@@ -93,8 +98,10 @@ section{
     /* justify-content: center; */
     align-items: center;
     background-color: white;
-    width: 50%;
+    width: 47%;
     position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .bloc>.image> h3{
       /* ici */
@@ -111,16 +118,21 @@ section{
 }
 .bloc>.image{
  text-align: center;
+ overflow: hidden;
 }
 
 
 .image>a>img{
     /* height: 250px; width: 250px; */
     width: 100%;
+    transition: 0.5s;
+
 }
+
 
 .image>a>img:hover{
     transform: scale(1.5);
+
 }
 .Bloc_principale p{
     /* height: 250px; width: 250px; */
@@ -147,16 +159,30 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;
     color: gray;
 }
 .last_section>hr{
     margin-top: 0;
     margin-bottom: 10%;
-    width: 15%;
+    width: 10%;
+    background-color: black;
+    height: 1px;
+}
+.last_section h2{
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.last_section .boutton_principal{
+    background-color: rgb(235, 228, 228);
 }
 
+.last_section p{
+    font-size: 10px;
+}
 /* footer */
 .footer{
     display: flex;
@@ -189,3 +215,6 @@ section{
 .copyright span{
     text-decoration: underline dotted;
 }
+
+
+/* responsive */
